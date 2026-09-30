@@ -1,0 +1,30 @@
+
+:root{
+  --bg:#f6f4ef;--surface:#fff;--text:#18212a;--muted:#66717c;--line:#d6dbd7;
+  --accent:#245a7a;--soft:#e8f0f4;--max:1120px
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.62}
+a{color:inherit}.wrap{width:min(calc(100% - 40px),var(--max));margin:0 auto}
+.hero{border-bottom:1px solid var(--line);background:radial-gradient(circle at 85% 15%,rgba(36,90,122,.11),transparent 30%),var(--bg)}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;text-decoration:none}
+.nav-links{display:flex;gap:24px}.nav-links a{text-decoration:none;color:var(--muted);font-size:14px}
+.hero-content{padding:94px 0 102px;max-width:850px;margin-left:max(20px,calc((100vw - var(--max))/2))}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--accent);margin:0 0 12px}
+h1{font-size:clamp(48px,8vw,88px);line-height:.95;letter-spacing:-.055em;margin:0 0 28px}
+.lead{font-size:21px;color:#3f4a54;max-width:780px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.button{display:inline-block;border:1px solid var(--line);padding:11px 16px;border-radius:8px;text-decoration:none;background:var(--surface);font-weight:650;font-size:14px}
+.button.primary{background:var(--text);color:#fff;border-color:var(--text)}
+.section{padding:82px 0}.section-heading{max-width:770px;margin-bottom:42px}.section-heading h2,.about-grid h2{margin:0 0 14px;font-size:38px;letter-spacing:-.035em}.section-heading>p:last-child{color:var(--muted)}
+.project{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(340px,.96fr);gap:42px;padding:48px 0;border-top:1px solid var(--line);align-items:center}.project:last-child{border-bottom:1px solid var(--line)}
+.project-meta{font-size:11px;font-weight:800;letter-spacing:.11em;color:var(--accent);margin-bottom:8px}.project h3{font-size:29px;line-height:1.16;letter-spacing:-.03em;margin:0 0 16px}.project p{color:#44505b}.project ul{padding-left:20px}.project li{margin:8px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 16px}.tags span{background:var(--soft);color:#294a5f;font-size:12px;font-weight:700;padding:5px 9px;border-radius:99px}.text-link{color:var(--accent);font-weight:750;text-decoration:none}.text-link:hover{text-decoration:underline}
+.note{font-size:13px;padding:11px 13px;border-left:3px solid var(--accent);background:rgba(36,90,122,.05)}
+.phone-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;align-items:center}.phone-gallery img{width:100%;display:block;border-radius:15px;box-shadow:0 10px 26px rgba(31,42,51,.11);border:1px solid rgba(0,0,0,.06)}.phone-gallery.touch{gap:7px}
+.architecture-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px;overflow:hidden}.architecture-card img{width:100%;display:block;border-radius:8px}
+.stacked-shots{display:grid;gap:12px}.stacked-shots a{display:block;background:#222;border-radius:12px;overflow:hidden;border:1px solid #333}.stacked-shots img{display:block;width:100%}
+.video-card{background:#090b18;border-radius:14px;overflow:hidden;border:1px solid #222}.video-card video{width:100%;display:block;aspect-ratio:16/9;background:#000}.video-card p{margin:0;padding:9px 12px;background:#fff;color:var(--muted);font-size:12px}
+.muted{background:#ecebe6;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}.about-copy{font-size:17px;color:#3f4a54}
+.footer{min-height:92px;display:flex;align-items:center;justify-content:space-between;font-size:13px;color:var(--muted)}.footer div{display:flex;gap:18px}.footer a{text-decoration:none}
+@media(max-width:820px){.hero-content{padding:70px 0 76px;width:min(calc(100% - 40px),var(--max));margin:0 auto}.lead{font-size:18px}.project{grid-template-columns:1fr;gap:25px}.about-grid{grid-template-columns:1fr;gap:18px}.phone-gallery{max-width:600px}.nav-links{gap:14px}}
+@media(max-width:520px){.phone-gallery{grid-template-columns:repeat(3,1fr);gap:4px}.project{padding:38px 0}.nav-links a:first-child{display:none}}
